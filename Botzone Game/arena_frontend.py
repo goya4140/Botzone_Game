@@ -142,7 +142,16 @@ class SimpleInteractionReferee:
 
             # --- 1. 生成输入：换手后视角翻转（XOR） ---
             input_as_black = is_black_turn ^ perspective_flipped
-            input_str = self.generate_input_for_bot(history, input_as_black)
+
+            # ★ 修复：换手后新黑方首次落子时，原来的 generate_input_for_bot 会
+            # 生成 "1\n{bx} {by}\n"（n=1 且对手有效坐标），与白方"是否换手"的
+            # 输入完全相同，导致程序再次输出 -1 -1 → Invalid_Move。
+            # 解决方案：补充换手作为第1轮历史，改为 n=2 格式，使 n==1 条件不成立。
+            if perspective_flipped and len(history) == 1 and not input_as_black:
+                bx, by = history[0]
+                input_str = f"2\n{bx} {by}\n-1 -1\n-1 -1\n"
+            else:
+                input_str = self.generate_input_for_bot(history, input_as_black)
 
             # --- 2. 启动子进程 ---
             try:

@@ -1,0 +1,162 @@
+[
+    {
+        "game_id": 1,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.141
+    },
+    {
+        "game_id": 2,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.145
+    },
+    {
+        "game_id": 3,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.154
+    },
+    {
+        "game_id": 4,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.155
+    },
+    {
+        "game_id": 5,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.159
+    },
+    {
+        "game_id": 6,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.142
+    },
+    {
+        "game_id": 7,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.153
+    },
+    {
+        "game_id": 8,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.155
+    },
+    {
+        "game_id": 9,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.15
+    },
+    {
+        "game_id": 10,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 54,
+        "duration_sec": 0.143
+    },
+    {
+        "game_id": 11,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.144
+    },
+    {
+        "game_id": 12,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.147
+    },
+    {
+        "game_id": 13,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.148
+    },
+    {
+        "game_id": 14,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.146
+    },
+    {
+        "game_id": 15,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.146
+    },
+    {
+        "game_id": 16,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.151
+    },
+    {
+        "game_id": 17,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.147
+    },
+    {
+        "game_id": 18,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.141
+    },
+    {
+        "game_id": 19,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.141
+    },
+    {
+        "game_id": 20,
+        "a_role": "White",
+        "outcome": "Win",
+        "reason": "Normal",
+        "total_moves": 55,
+        "duration_sec": 0.144
+    }
+]
