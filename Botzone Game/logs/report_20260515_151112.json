@@ -1,0 +1,162 @@
+[
+    {
+        "game_id": 1,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.453
+    },
+    {
+        "game_id": 2,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.01
+    },
+    {
+        "game_id": 3,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 4,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.01
+    },
+    {
+        "game_id": 5,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.009
+    },
+    {
+        "game_id": 6,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.008
+    },
+    {
+        "game_id": 7,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.009
+    },
+    {
+        "game_id": 8,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.008
+    },
+    {
+        "game_id": 9,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.008
+    },
+    {
+        "game_id": 10,
+        "a_role": "Black",
+        "outcome": "Win",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 11,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 12,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.008
+    },
+    {
+        "game_id": 13,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 14,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 15,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 16,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 17,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 18,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.006
+    },
+    {
+        "game_id": 19,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.007
+    },
+    {
+        "game_id": 20,
+        "a_role": "White",
+        "outcome": "Loss",
+        "reason": "Invalid_Move",
+        "total_moves": 1,
+        "duration_sec": 0.008
+    }
+]

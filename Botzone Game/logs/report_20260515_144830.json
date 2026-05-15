@@ -1,0 +1,1026 @@
+{
+    "experiment_meta": {
+        "timestamp": "20260515_144830",
+        "bot_a": "Stage4_MCTS_v2.cpp",
+        "bot_b": "Stage4_MCTS_v3.cpp",
+        "total_games": 100,
+        "time_limit_sec": 1.0,
+        "total_duration_sec": 1.27
+    },
+    "overall_stats": {
+        "Black": {
+            "Win": 18,
+            "Loss": 21,
+            "Draw": 3,
+            "Timeout": 8
+        },
+        "White": {
+            "Win": 7,
+            "Loss": 36,
+            "Draw": 4,
+            "Timeout": 3
+        }
+    },
+    "match_details": [
+        {
+            "game_id": 1,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 106,
+            "duration_sec": 1.82,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 2,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 80,
+            "duration_sec": 1.33,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 3,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 115,
+            "duration_sec": 1.72,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 4,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 112,
+            "duration_sec": 1.79,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 5,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Draw",
+            "total_moves": 99,
+            "duration_sec": 3.2,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 6,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 98,
+            "duration_sec": 1.71,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 7,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 91,
+            "duration_sec": 2.52,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 8,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 92,
+            "duration_sec": 1.8,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 9,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 31,
+            "duration_sec": 2.46,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 10,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 73,
+            "duration_sec": 0.77,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 11,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Draw",
+            "total_moves": 114,
+            "duration_sec": 0.93,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 12,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 100,
+            "duration_sec": 2.85,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 13,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 67,
+            "duration_sec": 3.38,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 14,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 62,
+            "duration_sec": 0.94,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 15,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 33,
+            "duration_sec": 2.97,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 16,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 110,
+            "duration_sec": 2.62,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 17,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 119,
+            "duration_sec": 0.81,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 18,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 84,
+            "duration_sec": 1.91,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 19,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Draw",
+            "total_moves": 31,
+            "duration_sec": 3.25,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 20,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 112,
+            "duration_sec": 2.47,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 21,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 55,
+            "duration_sec": 3.44,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 22,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 97,
+            "duration_sec": 2.1,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 23,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 95,
+            "duration_sec": 2.21,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 24,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 43,
+            "duration_sec": 1.6,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 25,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 45,
+            "duration_sec": 1.49,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 26,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 92,
+            "duration_sec": 3.39,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 27,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 97,
+            "duration_sec": 3.3,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 28,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 34,
+            "duration_sec": 1.11,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 29,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 85,
+            "duration_sec": 1.78,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 30,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 92,
+            "duration_sec": 1.47,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 31,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 65,
+            "duration_sec": 2.57,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 32,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 82,
+            "duration_sec": 1.67,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 33,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 43,
+            "duration_sec": 0.62,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 34,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 55,
+            "duration_sec": 2.01,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 35,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 54,
+            "duration_sec": 2.58,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 36,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 80,
+            "duration_sec": 2.59,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 37,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 74,
+            "duration_sec": 3.18,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 38,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 106,
+            "duration_sec": 2.49,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 39,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 106,
+            "duration_sec": 3.4,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 40,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Timeout",
+            "total_moves": 119,
+            "duration_sec": 2.48,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 41,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 75,
+            "duration_sec": 2.63,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 42,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 59,
+            "duration_sec": 1.28,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 43,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 88,
+            "duration_sec": 0.9,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 44,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 80,
+            "duration_sec": 1.74,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 45,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 95,
+            "duration_sec": 1.82,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 46,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 86,
+            "duration_sec": 1.88,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 47,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 87,
+            "duration_sec": 2.37,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 48,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Loss",
+            "total_moves": 80,
+            "duration_sec": 2.51,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 49,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 79,
+            "duration_sec": 2.92,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 50,
+            "black_player": "Stage4_MCTS_v2.cpp",
+            "white_player": "Stage4_MCTS_v3.cpp",
+            "a_role": "Black",
+            "a_outcome": "Win",
+            "total_moves": 114,
+            "duration_sec": 2.59,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 51,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 94,
+            "duration_sec": 2.04,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 52,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 119,
+            "duration_sec": 0.66,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 53,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 84,
+            "duration_sec": 2.79,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 54,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 79,
+            "duration_sec": 3.3,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 55,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 30,
+            "duration_sec": 2.58,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 56,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 90,
+            "duration_sec": 0.81,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 57,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Draw",
+            "total_moves": 72,
+            "duration_sec": 2.56,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 58,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 109,
+            "duration_sec": 2.17,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 59,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Draw",
+            "total_moves": 68,
+            "duration_sec": 1.26,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 60,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 85,
+            "duration_sec": 0.51,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 61,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Win",
+            "total_moves": 91,
+            "duration_sec": 1.16,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 62,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Draw",
+            "total_moves": 98,
+            "duration_sec": 0.57,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 63,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Win",
+            "total_moves": 110,
+            "duration_sec": 2.63,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 64,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 112,
+            "duration_sec": 1.7,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 65,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 109,
+            "duration_sec": 2.51,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 66,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 51,
+            "duration_sec": 1.33,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 67,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Draw",
+            "total_moves": 78,
+            "duration_sec": 1.08,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 68,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 100,
+            "duration_sec": 1.3,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 69,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 76,
+            "duration_sec": 1.53,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 70,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 118,
+            "duration_sec": 2.94,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 71,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 107,
+            "duration_sec": 3.2,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 72,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 98,
+            "duration_sec": 2.94,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 73,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Win",
+            "total_moves": 55,
+            "duration_sec": 2.21,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 74,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 58,
+            "duration_sec": 1.31,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 75,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 101,
+            "duration_sec": 3.46,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 76,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 51,
+            "duration_sec": 3.14,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 77,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Timeout",
+            "total_moves": 80,
+            "duration_sec": 2.69,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 78,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 59,
+            "duration_sec": 3.46,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 79,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Win",
+            "total_moves": 76,
+            "duration_sec": 2.94,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 80,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Timeout",
+            "total_moves": 61,
+            "duration_sec": 1.09,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 81,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 113,
+            "duration_sec": 2.12,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 82,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 96,
+            "duration_sec": 0.67,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 83,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 94,
+            "duration_sec": 0.66,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 84,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Win",
+            "total_moves": 58,
+            "duration_sec": 2.54,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 85,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 50,
+            "duration_sec": 1.7,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 86,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 46,
+            "duration_sec": 0.72,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 87,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 61,
+            "duration_sec": 1.89,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 88,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 66,
+            "duration_sec": 1.25,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 89,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 42,
+            "duration_sec": 1.75,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 90,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Win",
+            "total_moves": 110,
+            "duration_sec": 2.49,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 91,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Win",
+            "total_moves": 111,
+            "duration_sec": 1.53,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 92,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 108,
+            "duration_sec": 2.23,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 93,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 109,
+            "duration_sec": 1.05,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 94,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 117,
+            "duration_sec": 2.15,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 95,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 33,
+            "duration_sec": 1.95,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 96,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Timeout",
+            "total_moves": 74,
+            "duration_sec": 1.84,
+            "termination_reason": "Timeout_or_Crash"
+        },
+        {
+            "game_id": 97,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 108,
+            "duration_sec": 0.96,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 98,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 77,
+            "duration_sec": 0.95,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 99,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 69,
+            "duration_sec": 0.94,
+            "termination_reason": "Normal"
+        },
+        {
+            "game_id": 100,
+            "black_player": "Stage4_MCTS_v3.cpp",
+            "white_player": "Stage4_MCTS_v2.cpp",
+            "a_role": "White",
+            "a_outcome": "Loss",
+            "total_moves": 84,
+            "duration_sec": 2.0,
+            "termination_reason": "Normal"
+        }
+    ]
+}
