@@ -34,6 +34,8 @@ with st.sidebar:
     st.divider()
     single_side_games = st.number_input("单边对战局数", min_value=1, max_value=5000, value=10, step=10)
     time_limit = st.slider("单步限时 (秒)", 0.5, 5.0, 1.0)
+    show_live_board = st.checkbox("🎥 实时对战预览", value=True,
+                                  help="测试期间逐步显示当前对局棋盘（略增耗时）")
     start_btn = st.button("🚀 编译并开始测试")
 
     st.divider()
@@ -222,13 +224,45 @@ def render_result_tabs(match_logs, bot_a_name, bot_b_name):
     with tab2:
         st.subheader("🎮 棋局回放")
 
-        game_labels = [
-            f"第{m['game_id']}局  [{m['a_role']}] {bot_a_name[:12]}  "
-            f"→ {m['outcome']}  ({m['total_moves']}步)"
-            for m in match_logs
-        ]
-        sel_idx = st.selectbox("选择对局", range(len(match_logs)),
-                               format_func=lambda i: game_labels[i],
+        # ── 可视化游戏总览网格 ──────────────────────────────────────────
+        OUTCOME_ICON  = {'Win': '🟢', 'Loss': '🔴', 'Draw': '🟡'}
+        REASON_BADGE  = {'Normal': '', 'Timeout': '⏱', 'Crash': '💥',
+                         'Invalid_Move': '❌', 'Invalid_Output': '❌'}
+        OUTCOME_LABEL = {'Win': '胜', 'Loss': '负', 'Draw': '平'}
+
+        st.markdown("#### 局势总览（颜色含义：🟢胜 🔴负 🟡平 🟠异常，⏱超时 ❌非法）")
+        cols_per_row = 10
+        for row_start in range(0, len(match_logs), cols_per_row):
+            row_slice = match_logs[row_start: row_start + cols_per_row]
+            grid_cols = st.columns(len(row_slice))
+            for ci, m in enumerate(row_slice):
+                oi = OUTCOME_ICON.get(m['outcome'], '🟠')
+                rb = REASON_BADGE.get(m['reason'], '⚠')
+                role_s = '黑' if m['a_role'] == 'Black' else '白'
+                with grid_cols[ci]:
+                    st.markdown(
+                        f"<div style='text-align:center;padding:3px 0'>"
+                        f"<span style='font-size:15px'>{oi}{rb}</span><br>"
+                        f"<b style='font-size:12px'>{m['game_id']}</b><br>"
+                        f"<span style='font-size:10px;color:#888'>{role_s}</span>"
+                        f"</div>",
+                        unsafe_allow_html=True,
+                    )
+
+        st.divider()
+
+        # ── 带图标的下拉选择器 ───────────────────────────────────────────
+        def _game_label(m):
+            oi = OUTCOME_ICON.get(m['outcome'], '🟠')
+            rb = REASON_BADGE.get(m['reason'], '')
+            rb_str = f" {rb}" if rb else ''
+            role = '⚫先手' if m['a_role'] == 'Black' else '⚪后手'
+            ol = OUTCOME_LABEL.get(m['outcome'], '异常')
+            return (f"{oi} 第{m['game_id']:02d}局  [{role}] {ol}{rb_str}"
+                    f"  ·  {m['total_moves']}步  {m['duration_sec']}s")
+
+        sel_idx = st.selectbox("选择查看对局", range(len(match_logs)),
+                               format_func=lambda i: _game_label(match_logs[i]),
                                key="replay_game_select")
 
         sel_game = match_logs[sel_idx]
@@ -404,12 +438,13 @@ class SimpleInteractionReferee:
 
         return "\n".join(lines) + "\n"
 
-    def play_match(self, exe_black, exe_white, time_limit):
+    def play_match(self, exe_black, exe_white, time_limit, move_callback=None):
         """
         运行一局对弈。
         返回: (winner, reason, moves_count, duration, history, move_times, was_swapped)
           history: list of (x, y, color)，color=1 黑 / -1 白（换手后颜色已修正）
           move_times: list of float，每颗棋子的思考耗时（秒）
+          move_callback: 可选回调 fn(history, move_times, moves_count)，每落一子后调用
         """
         board = [[0] * self.size for _ in range(self.size)]
         history = []      # (x, y, color)
@@ -519,6 +554,9 @@ class SimpleInteractionReferee:
             history.append((move_x, move_y, current_color))
             move_times.append(round(move_elapsed, 4))
 
+            if move_callback is not None:
+                move_callback(history, move_times, moves_count)
+
             if self.check_win(board, move_x, move_y, current_color):
                 return (determine_winner(is_black_turn), "Normal",
                         moves_count + 1, time.time() - start_time,
@@ -551,6 +589,9 @@ if start_btn:
     status_text = st.empty()
     error_display = st.empty()
 
+    # 实时对战预览区域
+    live_slot = st.empty()
+
     match_logs = []
     referee = SimpleInteractionReferee()
 
@@ -562,8 +603,61 @@ if start_btn:
         exe_black = exe_a if a_is_black else exe_b
         exe_white = exe_b if a_is_black else exe_a
 
+        # 构造实时回调（含节流，最高约 5fps）
+        if show_live_board:
+            def _make_cb(slot, gid, gtotal, a_black, bot_a, bot_b):
+                _t = [0.0]
+                def _cb(hist, mt, mc):
+                    now = time.time()
+                    if now - _t[0] < 0.2 and len(hist) > 1:
+                        return
+                    _t[0] = now
+                    with slot.container():
+                        role_a = "⚫ 先手（黑）" if a_black else "⚪ 后手（白）"
+                        st.markdown(
+                            f"**🎮 第 {gid}/{gtotal} 局** &nbsp;|&nbsp; "
+                            f"Bot A `{bot_a}` 执 {role_a}",
+                            unsafe_allow_html=True,
+                        )
+                        c1, c2 = st.columns([3, 2])
+                        with c1:
+                            fig = draw_board(hist)
+                            st.pyplot(fig, use_container_width=True)
+                            plt.close(fig)
+                        with c2:
+                            st.metric("已落子数", len(hist))
+                            if hist:
+                                lx, ly, lc = hist[-1][0], hist[-1][1], hist[-1][2]
+                                st.markdown(
+                                    f"**最新落子**  "
+                                    f"{'⚫ 黑' if lc == 1 else '⚪ 白'}方  "
+                                    f"`({lx}, {ly})`"
+                                )
+                            # 最近 5 步
+                            n = len(hist)
+                            rows = []
+                            for k in range(max(0, n - 5), n):
+                                x, y, c = hist[k][0], hist[k][1], hist[k][2]
+                                t = mt[k] * 1000 if k < len(mt) else None
+                                rows.append({
+                                    "步": k + 1,
+                                    "色": "黑" if c == 1 else "白",
+                                    "坐标": f"({x},{y})",
+                                    "ms": f"{t:.0f}" if t else "—",
+                                })
+                            st.dataframe(
+                                pd.DataFrame(rows),
+                                use_container_width=True,
+                                hide_index=True,
+                            )
+                return _cb
+            cb = _make_cb(live_slot, game_id, total_games,
+                          a_is_black, bot_a_name, bot_b_name)
+        else:
+            cb = None
+
         winner, reason, moves, duration, history, move_times, was_swapped = \
-            referee.play_match(exe_black, exe_white, time_limit)
+            referee.play_match(exe_black, exe_white, time_limit, move_callback=cb)
 
         if winner == "Draw":
             outcome = "Draw"
@@ -595,6 +689,9 @@ if start_btn:
             f"⚔️ 战况推进: {game_id}/{total_games} | "
             f"步数: {moves} | 耗时: {round(duration, 2)}秒"
         )
+
+    # 所有局结束后清空实时预览
+    live_slot.empty()
 
     # 保存结构化日志
     st.divider()
