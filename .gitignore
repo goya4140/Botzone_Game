@@ -1,0 +1,8 @@
+# 编译产物
+Botzone Game/bin/
+*.o
+*.exe
+
+# Python 缓存
+__pycache__/
+*.pyc
